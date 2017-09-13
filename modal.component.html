@@ -1,0 +1,11 @@
+<div class="modal-scroll">
+    <div class="modal-body" #modalBody>
+        <div *ngIf="config.header" class="modal-header">{{config.title}}</div>
+        <div class="modal-content" #modalComponent></div>
+        <div *ngIf="config.cancelText || config.confirmText" class="modal-footer">
+            <button *ngIf="config.cancelText" class="cancel" (click)="cancel()">{{config.cancelText}}</button>
+            <button *ngIf="config.confirmText" class="confirm" (click)="confirm()">{{config.confirmText}}</button>
+        </div>
+        <div *ngIf="config.header && config.close" (click)="close();" class="close">×</div>
+    </div>
+</div>
