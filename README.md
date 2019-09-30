@@ -33,7 +33,7 @@ You need either set
 全局引入modal.less
 
 ```none
-@import "src/app/components/modal/modal.less";
+@import "./app/modal/modal.less";
 ```
 
 demo.html:  
